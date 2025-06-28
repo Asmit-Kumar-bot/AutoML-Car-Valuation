@@ -18,23 +18,23 @@ This project uses machine learning to predict the selling price of a car based o
 - **Goal**: To model the relationship between the dependent variable (Selling Price) and multiple independent variables (features).
 - **Mathematics**:
   - The model assumes a linear relationship:  
-    \[
-    y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n + \varepsilon
-    \]
-  - The coefficients \(\beta_i\) are estimated by minimizing the **Mean Squared Error (MSE)**:
-    \[
-    MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat{y}_i)^2
-    \]
+    ```
+    y = β₀ + β₁·x₁ + β₂·x₂ + ... + βₙ·xₙ + ε
+    ```
+  - The coefficients (βᵢ) are estimated by minimizing the **Mean Squared Error (MSE)**:
+    ```
+    MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
+    ```
 
 ### 2. **Lasso Regression (L1 Regularization)**
 - **Goal**: Same as Linear Regression, but adds regularization to reduce overfitting.
 - **Mathematics**:
   - Adds a penalty term to the loss function:
-    \[
-    \text{Loss} = MSE + \lambda \sum_{j=1}^{n} |\beta_j|
-    \]
+    ```
+    Loss = MSE + λ * Σ|βⱼ|
+    ```
   - This encourages sparsity in the coefficients, effectively performing **feature selection**.
-  - \(\lambda\) is the regularization parameter controlling the strength of the penalty.
+  - `λ` is the regularization parameter controlling the strength of the penalty.
 
 ---
 
