@@ -11,6 +11,41 @@ This project uses machine learning to predict the selling price of a car based o
 - Transmission
 - Owner
 
+
+## 🤖 Models Used
+
+### 1. **Linear Regression**
+- **Goal**: To model the relationship between the dependent variable (Selling Price) and multiple independent variables (features).
+- **Mathematics**:
+  - The model assumes a linear relationship:  
+    \[
+    y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n + \varepsilon
+    \]
+  - The coefficients \(\beta_i\) are estimated by minimizing the **Mean Squared Error (MSE)**:
+    \[
+    MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat{y}_i)^2
+    \]
+
+### 2. **Lasso Regression (L1 Regularization)**
+- **Goal**: Same as Linear Regression, but adds regularization to reduce overfitting.
+- **Mathematics**:
+  - Adds a penalty term to the loss function:
+    \[
+    \text{Loss} = MSE + \lambda \sum_{j=1}^{n} |\beta_j|
+    \]
+  - This encourages sparsity in the coefficients, effectively performing **feature selection**.
+  - \(\lambda\) is the regularization parameter controlling the strength of the penalty.
+
+---
+
+## 📈 Evaluation Metrics
+
+- **R² Score**: Measures how well the regression model explains the variability of the response data.
+- **Mean Squared Error (MSE)**: The average squared difference between the actual and predicted values.
+- **Cross-validation**: Used to evaluate model performance on unseen data.
+
+---
+
 ## 🧠 Libraries Used
 - pandas
 - numpy
