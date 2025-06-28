@@ -27,8 +27,8 @@ This project uses machine learning to predict the selling price of a car based o
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/automl-car-valuation.git
-   cd automl-car-valuation
+   git clone https://github.com/Asmit-Kumar-bot/AutoML-Car-Valuation.git
+   cd AutoML-Car-Valuation
 
 2. Install dependencies:
    ```bash
